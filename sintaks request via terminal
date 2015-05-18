@@ -1,0 +1,21 @@
+//sending user to server
+
+curl -H "Content-Type: application/json" -X POST http://localhost:3000/login -d "{\"username\" : \"arvind@myapp.com\", \"password\" : \"pass123\"}"
+
+//test request
+
+
+acces token
+
+//acces data succes
+curl -H "Content-Type: application/json" -H "x-access-token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0MjkzMzc4MTA1OTJ9.2MORWKTbQM6gZaELgcB3UfHnPmlSzvizMPqEfTGaeRQ" -H "x-key:arvind@myapp.com" -X GET http://localhost:3000/api/v1/products
+
+//acces admin
+curl -H "Content-Type: application/json" -H "x-access-token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0MjkzMzc4MTA1OTJ9.2MORWKTbQM6gZaELgcB3UfHnPmlSzvizMPqEfTGaeRQ" -H "x-key:arvind@myapp.com" -X GET http://localhost:3000/api/v1/admin/users
+
+
+//fire requesti to get all user
+curl -H "Content-Type: application/json" -H "x-access-token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0Mjg2NDc4NjA3MDF9.KDi4aI4jejrOigG4fktQMog7w7AYU2x07yCTbvraFCo" -H "x-key:arvind@myapp.com" -X GET http://localhost:3000/api/v1/admin/users
+
+
+

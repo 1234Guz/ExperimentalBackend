@@ -1,0 +1,20 @@
+{
+  "name": "myRESTfulApp",
+  "version": "1.0.0",
+  "description": "myRestfulApp",
+  "main": "index.js",
+  "scripts": {
+    "test": "Error : no test specified"
+  },
+  "author": "gujarat santana",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^0.8.2",
+    "jsonwebtoken": "~1.1.2",
+    "body-parser": "^1.12.2",
+    "express": "^4.12.3",
+    "jwt-simple": "^0.2.0",
+    "mongoose": "^4.0.2",
+    "morgan": "^1.5.2"
+  }
+}
